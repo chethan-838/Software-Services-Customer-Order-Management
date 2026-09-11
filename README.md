@@ -89,14 +89,11 @@ Stores order information such as:
 📂 Project Structure
 
 Software_Services_Customer_Order_Management/
-│
 ├── README.md
 ├── REPORT.md
 ├── requirements.txt
-│
 ├── sql/
 │   └── schema.sql
-│
 └── src/
     ├── db_config.py
     ├── common.py
