@@ -5,6 +5,6 @@ DB_CONFIG = {
     "host": "localhost",
     "port": 3306,
     "user": "root",
-    "password": "Chethu@098",
+    "password": "YOUR_MYSQL_PASSWORD",
     "database": "Sales_customers_database_management",
 }
