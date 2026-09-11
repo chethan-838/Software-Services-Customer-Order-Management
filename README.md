@@ -1,40 +1,111 @@
-# Software Services Customer Order Management Control
+Software Services Customer Order Management System
 
-**Technology:** Python 3.13/3.14 + MySQL 8  
-**Database:** `Sales_customers_database_management`
+A Python and MySQL based customer order management project designed to manage salespeople, customers, and orders efficiently.
 
-This project implements all programs listed in the supplied Python Project 1 specification:
-1. Add 10 salespeople through Python
-2. Add 7 customers through Python
-3. Display all salespeople
-4. Increase salesperson incentive/commission by Rs. 1500.55
-5. Display all customers
-6. Display customers in London, Bengaluru, Paris or Mumbai
-7. Store 9 orders
-8. Display all orders
-9. Simple calculator using user-defined Python functions
+📌 Project Overview
 
-## Setup
+The Software Services Customer Order Management System is developed using Python and MySQL.
 
-1. Install MySQL 8 and create/start the MySQL server.
-2. Open `src/db_config.py` and enter your MySQL username/password.
-3. Install the Python dependency:
-   ```bash
-   pip install -r requirements.txt
-   ```
-4. Run `sql/schema.sql` in MySQL Workbench or MySQL Shell.
-5. Run the scripts from the project root, for example:
-   ```bash
-   python src/01_add_salespeople.py
-   python src/02_add_customers.py
-   python src/03_display_salespeople.py
-   python src/04_increase_incentive.py
-   python src/05_display_customers.py
-   python src/06_filter_customers.py
-   python src/07_add_orders.py
-   python src/08_display_orders.py
-   python src/09_calculator.py
-   ```
+The project manages:
 
-## Important
-The scripts use parameterized SQL queries and commit database changes. Running an insert script more than once may cause duplicate primary-key errors. If you want a clean run, recreate the database using `sql/schema.sql`.
+- Salespeople
+- Customers
+- Customer orders
+- Salesperson incentives
+- Customer location filtering
+- Basic calculations
+
+The Python programs connect to a MySQL database to insert, update, retrieve, and display business data.
+
+🎯 Purpose of the Project
+
+The purpose of this project is to develop a simple database-driven application for managing salespeople, customers, and customer orders.
+
+It demonstrates how Python can be integrated with MySQL to perform database operations in a real-world business scenario.
+
+🚀 Features
+
+- Add 10 salespeople
+- Add 7 customers
+- Display all salespeople
+- Increase salesperson incentive by ₹1500.55
+- Display all customers
+- Filter customers by city
+- Add 9 customer orders
+- Display all orders
+- Simple calculator using user-defined Python functions
+- MySQL database connectivity using Python
+
+🛠️ Technologies Used
+
+- Python 3.12
+- MySQL 8
+- mysql-connector-python
+- MySQL Workbench
+- Python IDLE
+- Git
+- GitHub
+
+🗄️ Database
+
+Database name:
+
+Sales_customers_database_management
+
+Tables
+
+1. "Salespeople"
+2. "customer"
+3. "order"
+
+Salespeople Table
+
+Stores salesperson information such as:
+
+- Salesperson number
+- Name
+- City
+- Incentive/commission
+
+Customer Table
+
+Stores customer information such as:
+
+- Customer number
+- Customer name
+- City
+- Salesperson number
+
+Order Table
+
+Stores order information such as:
+
+- Order number
+- Order date
+- Order amount
+- Customer number
+- Salesperson number
+
+📂 Project Structure
+
+Software_Services_Customer_Order_Management/
+│
+├── README.md
+├── REPORT.md
+├── requirements.txt
+│
+├── sql/
+│   └── schema.sql
+│
+└── src/
+    ├── db_config.py
+    ├── common.py
+    ├── 01_add_salespeople.py
+    ├── 02_add_customers.py
+    ├── 03_display_salespeople.py
+    ├── 04_increase_incentive.py
+    ├── 05_display_customers.py
+    ├── 06_filter_customers.py
+    ├── 07_add_orders.py
+    ├── 08_display_orders.py
+    └── 09_calculator.py
