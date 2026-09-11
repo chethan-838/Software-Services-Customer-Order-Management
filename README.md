@@ -86,23 +86,23 @@ Stores order information such as:
 - Customer number
 - Salesperson number
 
-📂 Project Structure
+## 📂 Project Structure
 
-Software_Services_Customer_Order_Management/
-├── README.md
-├── REPORT.md
-├── requirements.txt
-├── sql/
-│   └── schema.sql
-└── src/
-    ├── db_config.py
-    ├── common.py
-    ├── 01_add_salespeople.py
-    ├── 02_add_customers.py
-    ├── 03_display_salespeople.py
-    ├── 04_increase_incentive.py
-    ├── 05_display_customers.py
-    ├── 06_filter_customers.py
-    ├── 07_add_orders.py
-    ├── 08_display_orders.py
-    └── 09_calculator.py
+    Software_Services_Customer_Order_Management/
+    ├── README.md
+    ├── REPORT.md
+    ├── requirements.txt
+    ├── sql/
+    │   └── schema.sql
+    └── src/
+        ├── db_config.py
+        ├── common.py
+        ├── 01_add_salespeople.py
+        ├── 02_add_customers.py
+        ├── 03_display_salespeople.py
+        ├── 04_increase_incentive.py
+        ├── 05_display_salespeople.py
+        ├── 06_filter_customers.py
+        ├── 07_add_orders.py
+        ├── 08_display_orders.py
+        └── 09_calculator.py
